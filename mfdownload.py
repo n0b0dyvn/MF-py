@@ -95,8 +95,8 @@ if __name__ == '__main__':
 			print "\t\t\t********DOWNLOADING FILE %s********\n" % downLoad.fileName
 			downLoad.downloadFile()
 	except:
-		downLoad = linkDownload(i)
+		downLoad = linkDownload(link)
 		print "\t\t\t********DOWNLOADING FILE %s********\n" % downLoad.fileName
-		linkDownload(link).downloadFile()
+		downLoad.downloadFile()
 	print
 	print "FINISHED DOWNLOAD ALL FILE"
